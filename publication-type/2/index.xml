@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Academic</title>
+    <link>https://example.com/publication-type/2/</link>
+      <atom:link href="https://example.com/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 01 Jan 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>2</title>
+      <link>https://example.com/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>Automated labeling for robotic autonomous navigation through multi-sensory semi-supervised learning on big data</title>
+      <link>https://example.com/publication/xu-2019-automated/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xu-2019-automated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In-band full duplex wireless communications and networking for iot devices: Progress, challenges and opportunities</title>
+      <link>https://example.com/publication/wu-2019-band/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wu-2019-band/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real-time human activity recognition based on radar</title>
+      <link>https://example.com/publication/guo-2019-real/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2019-real/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A deep residual convolutional neural network for facial keypoint detection with missing labels</title>
+      <link>https://example.com/publication/wu-2018-deep/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wu-2018-deep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real Time 3D Indoor Human Image Capturing Based on FMCW Radar</title>
+      <link>https://example.com/publication/guo-2018-real/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2018-real/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Avoidance of manual labeling in robotic autonomous navigation through multi-sensory semi-supervised learning</title>
+      <link>https://example.com/publication/xu-2017-avoidance/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xu-2017-avoidance/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
