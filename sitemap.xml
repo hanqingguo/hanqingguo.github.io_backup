@@ -84,6 +84,12 @@
   <url>
     <loc>https://example.com/publication/yan-2020-surfingattack/</loc><lastmod>2022-01-01T21:03:34-05:00</lastmod></url>
   <url>
+    <loc>https://example.com/tag/deep-learning/</loc><lastmod>2019-06-20T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://example.com/project/</loc><lastmod>2019-06-20T00:00:00+00:00</lastmod></url>
+  <url>
+    <loc>https://example.com/project/yolo/</loc><lastmod>2019-06-20T00:00:00+00:00</lastmod></url>
+  <url>
     <loc>https://example.com/slides/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://example.com/slides/example/</loc><lastmod>2019-02-05T00:00:00+00:00</lastmod></url>
@@ -142,11 +148,9 @@
   <url>
     <loc>https://example.com/publication/wu-2017-real/</loc><lastmod>2022-01-01T21:03:32-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/tag/deep-learning/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+    <loc>https://example.com/project/deepfake/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
   <url>
-    <loc>https://example.com/project/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://example.com/project/example/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
+    <loc>https://example.com/project/radar/</loc><lastmod>2016-04-27T00:00:00+00:00</lastmod></url>
   <url>
     <loc>https://example.com/admin/</loc></url>
   <url>
