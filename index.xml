@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Academic</title>
+    <title>Homepage</title>
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
-    <description>Academic</description>
+    <description>Homepage</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
-      <title>Academic</title>
+      <title>Homepage</title>
       <link>https://example.com/</link>
     </image>
     
@@ -623,6 +623,95 @@ draw each char &lt;br&gt;
     </item>
     
     <item>
+      <title>Walabot Shows 3D Image</title>
+      <link>https://example.com/project/radar/</link>
+      <pubDate>Sat, 27 Apr 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/radar/</guid>
+      <description>&lt;style&gt;
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: &#34;&#34;;
+  clear: both;
+  display: table;
+}
+&lt;/style&gt;
+&lt;p&gt;&lt;a href=&#34;https://walabot.com/&#34;&gt;Walabot&lt;/a&gt; senses environment by transmitting, receiving and recording signals from MIMO antennas. The frequency range from 3.3-10 GHz.
+Today I am going to show you how walabot collect 3D images.&lt;/p&gt;
+&lt;h2&gt;Raw signals&lt;/h2&gt;
+  &lt;img src=&#34;raw.PNG&#34; width=&#34;50%&#34;/&gt;
+  &lt;br/&gt;
+  &lt;p&gt;
+  Our radar sensing platform emits probing pulse signals x(t) at a pulse repetition frequency (PRF) of 16 Hz, but within each pulse repetition interval (PRI), the receiver antenna
+samples the received signal y(t) at a very high frequency of 8 KHz.
+  The x-axis of raw signals is response time, while y-axis means amplitude at that time slot. Red line is actually samples what receiver antenna sampling.
+  In other words, response time is signal traverse time from transmit antenna to receive antenna, which depends on distance to radar. Higher amplitude at specific time, means there is object at that place.
+  &lt;/p&gt;
+&lt;h2&gt;2D images&lt;/h2&gt;
+&lt;div class=&#34;row&#34;&gt;
+  &lt;div class=&#34;column&#34;&gt;
+    &lt;img src=&#34;2d.PNG&#34; style=&#34;width:100%&#34;&gt;
+  &lt;/div&gt;
+  &lt;div class=&#34;column&#34;&gt;
+    &lt;img src=&#34;2d-real.png&#34; height=60% style=&#34;width:100%&#34;&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+  &lt;p&gt;While 2D images only shows &amp;phi; (wide angle) versus &lt;var&gt;R&lt;/var&gt;;. However, any object in real world is 3D, it has height as well, then introduce &amp;theta; (elevation angle) as height.
+  To get 3D image, let&#39;s see the axis system in walabot.&lt;/p&gt;
+    &lt;img src=&#34;axis.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;/&gt;&lt;br&gt;
+    where &lt;br&gt;
+    &lt;code&gt;
+      X = R*Sin&amp;theta;&lt;br&gt;
+      Y = R*Cos&amp;theta;Sin&amp;phi;&lt;br&gt;
+      Z = R*Cos&amp;theta;Cos&amp;phi;
+    &lt;/code&gt;
+&lt;h2&gt;3D images&lt;/h2&gt;
+  &lt;p&gt;Instead of using 2D images, we construct 3D images based on those 2D images by stacking them in vertical direction.&lt;/p&gt;
+  &lt;img src=&#34;3d-stack.png&#34; width=&#34;85%&#34;/&gt;
+  &lt;p&gt;Figure above shows how to stack 2D images, the implement process are
+    &lt;ol&gt;
+  &lt;li&gt;Concatenate 2D images to 3D matrix &lt;/li&gt;
+  &lt;li&gt;Use &lt;code&gt;measure.marching_cubes_classic&lt;/code&gt; to make vertices and faces&lt;/li&gt;
+  &lt;li&gt;Change axis ranges from interval index to real unit&lt;br&gt;
+    For example: &lt;br&gt;
+    &lt;code&gt;
+    (0,100) =&gt; (1,200)  R(cm)&lt;br&gt;
+    (0,61)  =&gt; (-90,90) &amp;phi;(degree)&lt;br&gt;
+    (0,9)   =&gt; (-20,20) &amp;theta;(degree)
+    &lt;/code&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Use &lt;code&gt;Poly3DCollection&lt;/code&gt; to get mesh&lt;/li&gt;
+&lt;/ol&gt;
+  &lt;/p&gt;
+&lt;h2&gt;3D videos&lt;/h2&gt;
+  &lt;p&gt;Once get 3D image, we save it to IO buffer, and use PIL to open buffer, then convert it to ndarray, write ndarray as one frame to video by using openCV&lt;/p&gt;
+  &lt;video width=&#34;400&#34; controls&gt;
+  &lt;source src=&#34;walk.mp4&#34; type=&#34;video/mp4&#34;&gt;
+  &lt;/video&gt;
+  &lt;p&gt;Video above shows a human walk around walabot radar.&lt;/p&gt;
+&lt;h2&gt;CNN extract Features&lt;/h2&gt;
+&lt;p&gt;For each frame, we use resnet-18 to extract features, we change last Average pooling to Max pooling because Max pooling extracts the most important features like edges whereas,
+  average pooling extracts features so smoothly. For image data, you can see the difference. Although both are used for same reason, I think max pooling is better for extracting the extreme features.
+  Average pooling sometimes can’t extract good features because it takes all into count and results an average value which may/may not be important for object detection type tasks.
+  Then change output linear layer to extract 10 features.
+&lt;/p&gt;
+&lt;h2&gt;LSTM training&lt;/h2&gt;
+  &lt;p&gt;&lt;img src=&#34;lstm.png&#34; width=&#34;45%&#34; height=&#34;60%&#34;/&gt;&lt;br&gt;
+    &lt;br&gt;
+    We use 3 frames to recognize one activity. Since 3D radar signal shown above is abstract video. Unlike camera videos which each frame represent a activity, radar video can only be detected by
+    continuous frames change to recognize one activity. We collect many 3 frames video for each activity as training data. When testing, given continuous stream radar video, and feed every 3 frames to
+    LSTM network, then gives our prediction for each frame.
+    Detailed technique will be present in my next paper.
+  &lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Slides</title>
       <link>https://example.com/slides/example/</link>
       <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
@@ -784,6 +873,84 @@ $$&lt;/p&gt;
     </item>
     
     <item>
+      <title>Deepfakes Implementation with Pytorch</title>
+      <link>https://example.com/project/deepfake/</link>
+      <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/project/deepfake/</guid>
+      <description>&lt;h2&gt;source code&lt;/h2&gt;
+This link behind shows how to implement &lt;a href=&#34;https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/&#34;&gt;YOLOv3 with pytorch instructions&lt;/a&gt;
+In my tutorial, I give a solution to convert Label to Chinese Character.
+&lt;h2&gt;4 Steps To Convert Label to Chinese&lt;/h2&gt;
+&lt;h3&gt;1. Change coconame&lt;/h3&gt;
+&lt;p&gt; First of all, we need to translate english label to chinese label
+&lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch/blob/master/data/coco.names&#34;&gt;translated labels is availiable here&lt;/a&gt;&lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;2. Use FreeType to write a script to draw chinese characters&lt;/h3&gt;
+&lt;br&gt;
+&lt;p&gt; Because Opencv doesn&#39;t support chinese character, we need to use a known font style to draw chinese character, it contains 3 parts:
+  &lt;ol&gt;
+&lt;li&gt;&lt;code&gt;draw_ft_bitmap(self, img, bitmap, pen, color)&lt;/code&gt;&lt;br&gt;
+draw each char &lt;br&gt;
+&lt;pre&gt;
+    :param bitmap: bitmap
+    :param pen:    pen
+    :param color:  pen color e.g.(0,0,255) - red
+    :return:       image
+&lt;/pre&gt;
+ &lt;/li&gt;
+&lt;li&gt;&lt;code&gt;draw_string(self, img, x_pos, y_pos, text, color)&lt;/code&gt;&lt;br&gt;
+  draw string &lt;br&gt;
+&lt;pre&gt;
+    :param x_pos: text x-postion on img
+    :param y_pos: text y-postion on img
+    :param text:  text (unicode)
+    :param color: text color
+    :return:      image
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;draw_text(self, image, pos, text, text_size, text_color)&lt;/code&gt;&lt;br&gt;
+  (draw chinese(or not) text with ttf &lt;br&gt;
+&lt;pre&gt;
+    :param image:     image(numpy.ndarray) to draw text
+    :param pos:       where to draw text
+    :param text:      the context, for chinese should be unicode type
+    :param text_size: text size
+    :param text_color:text color
+    :return:          image
+&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/p&gt;
+&lt;h3&gt;3. Download msyh.ttf&lt;/h3&gt;
+&lt;p&gt; .ttf file is dependency to specify font style, it would be loaded in FreeType script, click &lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch/blob/master/msyh.ttf&#34;&gt;here&lt;/a&gt; to Download &lt;/p&gt;
+&lt;h3&gt;4. Apply ft2 Chinese Character to yolo&lt;/h3&gt;
+&lt;p&gt;In main detect flow (cam_detect.py), instead of using &lt;code&gt;cv2.imshow()&lt;/code&gt;, we use &lt;code&gt;ft.draw_text()&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;
+   comment &lt;code&gt;cv2.putText&lt;/code&gt; part, use &lt;code&gt;ft.draw_text&lt;/code&gt; instead &lt;br&gt;
+&lt;pre&gt;
+    # c2 = c1[0] + t_size[0] + 3, c1[1] + t_size[1] + 4
+    # cv2.rectangle(img, c1, c2,color, -1)
+    # cv2.rectangle(img, c1, c2, color, -1)
+    # cv2.putText(img, label, (c1[0], c1[1] + t_size[1] + 4), cv2.FONT_HERSHEY_PLAIN, 2, [225,255,255], 1);
+    ft = ft2.put_chinese_text(&#39;msyh.ttf&#39;)
+    ft.draw_text(image=img, pos=(c1[0], c1[1] + t_size[1] - 7), text=label, text_size=15, text_color=[255, 255, 255])
+&lt;/pre&gt;&lt;/p&gt;
+&lt;h3&gt;Before Translate&lt;/h3&gt;
+&lt;video width=&#34;400&#34; controls&gt;
+&lt;source src=&#34;https://example.com/assets/media/yolo/eng_caption.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;br/&gt;
+&lt;h3&gt;After Translate&lt;/h3&gt;
+&lt;video width=&#34;400&#34; controls&gt;
+&lt;source src=&#34;https://example.com/assets/media/yolo/cn_caption.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;/video&gt;
+&lt;/br&gt;
+&lt;p&gt;You can Download All source code from my github,&lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch&#34;&gt;here&lt;/a&gt;
+&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>A deep residual convolutional neural network for facial keypoint detection with missing labels</title>
       <link>https://example.com/publication/wu-2018-deep/</link>
       <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
@@ -861,173 +1028,6 @@ $$&lt;/p&gt;
       <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/wu-2017-real/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Deepfakes Implementation with Pytorch</title>
-      <link>https://example.com/project/deepfake/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/deepfake/</guid>
-      <description>&lt;h2&gt;source code&lt;/h2&gt;
-This link behind shows how to implement &lt;a href=&#34;https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/&#34;&gt;YOLOv3 with pytorch instructions&lt;/a&gt;
-In my tutorial, I give a solution to convert Label to Chinese Character.
-&lt;h2&gt;4 Steps To Convert Label to Chinese&lt;/h2&gt;
-&lt;h3&gt;1. Change coconame&lt;/h3&gt;
-&lt;p&gt; First of all, we need to translate english label to chinese label
-&lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch/blob/master/data/coco.names&#34;&gt;translated labels is availiable here&lt;/a&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;h3&gt;2. Use FreeType to write a script to draw chinese characters&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt; Because Opencv doesn&#39;t support chinese character, we need to use a known font style to draw chinese character, it contains 3 parts:
-  &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;draw_ft_bitmap(self, img, bitmap, pen, color)&lt;/code&gt;&lt;br&gt;
-draw each char &lt;br&gt;
-&lt;pre&gt;
-    :param bitmap: bitmap
-    :param pen:    pen
-    :param color:  pen color e.g.(0,0,255) - red
-    :return:       image
-&lt;/pre&gt;
- &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;draw_string(self, img, x_pos, y_pos, text, color)&lt;/code&gt;&lt;br&gt;
-  draw string &lt;br&gt;
-&lt;pre&gt;
-    :param x_pos: text x-postion on img
-    :param y_pos: text y-postion on img
-    :param text:  text (unicode)
-    :param color: text color
-    :return:      image
-&lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;draw_text(self, image, pos, text, text_size, text_color)&lt;/code&gt;&lt;br&gt;
-  (draw chinese(or not) text with ttf &lt;br&gt;
-&lt;pre&gt;
-    :param image:     image(numpy.ndarray) to draw text
-    :param pos:       where to draw text
-    :param text:      the context, for chinese should be unicode type
-    :param text_size: text size
-    :param text_color:text color
-    :return:          image
-&lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/p&gt;
-&lt;h3&gt;3. Download msyh.ttf&lt;/h3&gt;
-&lt;p&gt; .ttf file is dependency to specify font style, it would be loaded in FreeType script, click &lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch/blob/master/msyh.ttf&#34;&gt;here&lt;/a&gt; to Download &lt;/p&gt;
-&lt;h3&gt;4. Apply ft2 Chinese Character to yolo&lt;/h3&gt;
-&lt;p&gt;In main detect flow (cam_detect.py), instead of using &lt;code&gt;cv2.imshow()&lt;/code&gt;, we use &lt;code&gt;ft.draw_text()&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;
-   comment &lt;code&gt;cv2.putText&lt;/code&gt; part, use &lt;code&gt;ft.draw_text&lt;/code&gt; instead &lt;br&gt;
-&lt;pre&gt;
-    # c2 = c1[0] + t_size[0] + 3, c1[1] + t_size[1] + 4
-    # cv2.rectangle(img, c1, c2,color, -1)
-    # cv2.rectangle(img, c1, c2, color, -1)
-    # cv2.putText(img, label, (c1[0], c1[1] + t_size[1] + 4), cv2.FONT_HERSHEY_PLAIN, 2, [225,255,255], 1);
-    ft = ft2.put_chinese_text(&#39;msyh.ttf&#39;)
-    ft.draw_text(image=img, pos=(c1[0], c1[1] + t_size[1] - 7), text=label, text_size=15, text_color=[255, 255, 255])
-&lt;/pre&gt;&lt;/p&gt;
-&lt;h3&gt;Before Translate&lt;/h3&gt;
-&lt;video width=&#34;400&#34; controls&gt;
-&lt;source src=&#34;https://example.com/assets/media/yolo/eng_caption.mp4&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
-&lt;br/&gt;
-&lt;h3&gt;After Translate&lt;/h3&gt;
-&lt;video width=&#34;400&#34; controls&gt;
-&lt;source src=&#34;https://example.com/assets/media/yolo/cn_caption.mp4&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
-&lt;/br&gt;
-&lt;p&gt;You can Download All source code from my github,&lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch&#34;&gt;here&lt;/a&gt;
-&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Walabot Shows 3D Image</title>
-      <link>https://example.com/project/radar/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>https://example.com/project/radar/</guid>
-      <description>&lt;style&gt;
-.column {
-  float: left;
-  width: 50%;
-  padding: 5px;
-}
-
-/* Clear floats after image containers */
-.row::after {
-  content: &#34;&#34;;
-  clear: both;
-  display: table;
-}
-&lt;/style&gt;
-&lt;p&gt;&lt;a href=&#34;https://walabot.com/&#34;&gt;Walabot&lt;/a&gt; senses environment by transmitting, receiving and recording signals from MIMO antennas. The frequency range from 3.3-10 GHz.
-Today I am going to show you how walabot collect 3D images.&lt;/p&gt;
-&lt;h2&gt;Raw signals&lt;/h2&gt;
-  &lt;img src=&#34;raw.PNG&#34; width=&#34;50%&#34;/&gt;
-  &lt;br/&gt;
-  &lt;p&gt;
-  Our radar sensing platform emits probing pulse signals x(t) at a pulse repetition frequency (PRF) of 16 Hz, but within each pulse repetition interval (PRI), the receiver antenna
-samples the received signal y(t) at a very high frequency of 8 KHz.
-  The x-axis of raw signals is response time, while y-axis means amplitude at that time slot. Red line is actually samples what receiver antenna sampling.
-  In other words, response time is signal traverse time from transmit antenna to receive antenna, which depends on distance to radar. Higher amplitude at specific time, means there is object at that place.
-  &lt;/p&gt;
-&lt;h2&gt;2D images&lt;/h2&gt;
-&lt;div class=&#34;row&#34;&gt;
-  &lt;div class=&#34;column&#34;&gt;
-    &lt;img src=&#34;2d.PNG&#34; style=&#34;width:100%&#34;&gt;
-  &lt;/div&gt;
-  &lt;div class=&#34;column&#34;&gt;
-    &lt;img src=&#34;2d-real.png&#34; height=60% style=&#34;width:100%&#34;&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-  &lt;p&gt;While 2D images only shows &amp;phi; (wide angle) versus &lt;var&gt;R&lt;/var&gt;;. However, any object in real world is 3D, it has height as well, then introduce &amp;theta; (elevation angle) as height.
-  To get 3D image, let&#39;s see the axis system in walabot.&lt;/p&gt;
-    &lt;img src=&#34;axis.png&#34; width=&#34;50%&#34; height=&#34;50%&#34;/&gt;&lt;br&gt;
-    where &lt;br&gt;
-    &lt;code&gt;
-      X = R*Sin&amp;theta;&lt;br&gt;
-      Y = R*Cos&amp;theta;Sin&amp;phi;&lt;br&gt;
-      Z = R*Cos&amp;theta;Cos&amp;phi;
-    &lt;/code&gt;
-&lt;h2&gt;3D images&lt;/h2&gt;
-  &lt;p&gt;Instead of using 2D images, we construct 3D images based on those 2D images by stacking them in vertical direction.&lt;/p&gt;
-  &lt;img src=&#34;3d-stack.png&#34; width=&#34;85%&#34;/&gt;
-  &lt;p&gt;Figure above shows how to stack 2D images, the implement process are
-    &lt;ol&gt;
-  &lt;li&gt;Concatenate 2D images to 3D matrix &lt;/li&gt;
-  &lt;li&gt;Use &lt;code&gt;measure.marching_cubes_classic&lt;/code&gt; to make vertices and faces&lt;/li&gt;
-  &lt;li&gt;Change axis ranges from interval index to real unit&lt;br&gt;
-    For example: &lt;br&gt;
-    &lt;code&gt;
-    (0,100) =&gt; (1,200)  R(cm)&lt;br&gt;
-    (0,61)  =&gt; (-90,90) &amp;phi;(degree)&lt;br&gt;
-    (0,9)   =&gt; (-20,20) &amp;theta;(degree)
-    &lt;/code&gt;
-  &lt;/li&gt;
-  &lt;li&gt;Use &lt;code&gt;Poly3DCollection&lt;/code&gt; to get mesh&lt;/li&gt;
-&lt;/ol&gt;
-  &lt;/p&gt;
-&lt;h2&gt;3D videos&lt;/h2&gt;
-  &lt;p&gt;Once get 3D image, we save it to IO buffer, and use PIL to open buffer, then convert it to ndarray, write ndarray as one frame to video by using openCV&lt;/p&gt;
-  &lt;video width=&#34;400&#34; controls&gt;
-  &lt;source src=&#34;walk.mp4&#34; type=&#34;video/mp4&#34;&gt;
-  &lt;/video&gt;
-  &lt;p&gt;Video above shows a human walk around walabot radar.&lt;/p&gt;
-&lt;h2&gt;CNN extract Features&lt;/h2&gt;
-&lt;p&gt;For each frame, we use resnet-18 to extract features, we change last Average pooling to Max pooling because Max pooling extracts the most important features like edges whereas,
-  average pooling extracts features so smoothly. For image data, you can see the difference. Although both are used for same reason, I think max pooling is better for extracting the extreme features.
-  Average pooling sometimes can’t extract good features because it takes all into count and results an average value which may/may not be important for object detection type tasks.
-  Then change output linear layer to extract 10 features.
-&lt;/p&gt;
-&lt;h2&gt;LSTM training&lt;/h2&gt;
-  &lt;p&gt;&lt;img src=&#34;lstm.png&#34; width=&#34;45%&#34; height=&#34;60%&#34;/&gt;&lt;br&gt;
-    &lt;br&gt;
-    We use 3 frames to recognize one activity. Since 3D radar signal shown above is abstract video. Unlike camera videos which each frame represent a activity, radar video can only be detected by
-    continuous frames change to recognize one activity. We collect many 3 frames video for each activity as training data. When testing, given continuous stream radar video, and feed every 3 frames to
-    LSTM network, then gives our prediction for each frame.
-    Detailed technique will be present in my next paper.
-  &lt;/p&gt;
-</description>
     </item>
     
     <item>
