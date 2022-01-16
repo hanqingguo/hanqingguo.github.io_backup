@@ -13,74 +13,6 @@
     </image>
     
     <item>
-      <title>Black-Box, Query-Efficient Audio Adversarial Attacks</title>
-      <link>https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/</guid>
-      <description>&lt;h3 id=&#34;motivation&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Query-Inefficient&lt;/strong&gt;: Existing black box audio attacks require plenty of queries to interact with the victim speech models, e.g., &lt;a href=&#34;https://www.usenix.org/system/files/sec20summer_chen-yuxuan_prepub.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Devil&amp;rsquo;s whisper&lt;/a&gt; attacks commercial speech to text model by training an substitute model through querying victim model. &lt;a href=&#34;https://arxiv.org/pdf/2110.09714.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OCCAM&lt;/a&gt; estimates the gradient by incorporating evolutionary algorithms. The extensive query is time consuming, costly and may attract attention.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Decision-Boundary&lt;/strong&gt;: We find that the decision boundary in speech to text model is different from it in computer vision models. Due to the non-contiguous decision boundary, it&amp;rsquo;s hard for attacker to initialize the perturbation.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Phoneme&lt;/strong&gt; We find a short phoneme can surprisingly alter the speech model prediction. Based on the observation, we decide to optimize the duration and power of phoneme to inject it attacking the speech to text model.&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;methodology&#34;&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;method&#34; srcset=&#34;
-               /talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_09e22208c629ca2bc018ec837b2af644.JPG 400w,
-               /talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_c2c486aed395a6a05cadf6cffa5ca2b3.JPG 760w,
-               /talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_09e22208c629ca2bc018ec837b2af644.JPG&#34;
-               width=&#34;760&#34;
-               height=&#34;250&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
- There are three stages to generate a perturbation. At stage 1, given an input audio, we inject many different phonemes to it and try to alter the transcript result. Next, we collect the phonemes or phoneme combinations to a perturbation set. At stage 3, we estimate the gradient by applying small changes to the candidate perturbation, and then estimate the gradient direction through observing the prediction result changes. Then apply the estimated gradient to fine tuning the perturbation. Finally, we can get the adversarial perturbation targeting to a input audio.&lt;/p&gt;
-&lt;!-- ### **Demo**
-&lt;div&gt;
-&lt;table&gt;
-&lt;tr&gt;
-	&lt;td&gt;Bob and Alice talk simultaneously&lt;/td&gt;
-	&lt;td&gt;Only Alice&#39;s voice is kept&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-	&lt;td&gt;&lt;audio controls&gt;
-		  &lt;source src=&#34;./assets/joint.wav&#34; type=&#34;audio/wav&#34;&gt;
-		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-		&lt;/audio&gt;&lt;/td&gt;
-	&lt;td&gt;&lt;audio controls&gt;
-		  &lt;source src=&#34;./assets/joint-focus.wav&#34; type=&#34;audio/wav&#34;&gt;
-		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-		&lt;/audio&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt; --&gt;
-</description>
-    </item>
-    
-    <item>
       <title>NELoRa: Towards Ultra-low SNR LoRa Communication with Neural-enhanced Demodulation</title>
       <link>https://example.com/publication/li-2021-nelora/</link>
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
@@ -94,362 +26,6 @@
       <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/ivanov-2021-rectifying/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Speaker Selective Cancellation via Neural Enhanced Ultrasound Shadowing</title>
-      <link>https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/</guid>
-      <description>&lt;h3 id=&#34;motivation&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Necessity of Recorder Jammer:&lt;/strong&gt; Voice recording is an essential information-sharing approach, which is benefiting many aspects of our daily life. Nowadays, smartphones and Internet-of-Things (IoT) devices equipped with microphones allow people to record voice anytime and anywhere.
-However, the growing presence of unauthorized microphones has led to numerous incidences of privacy violations. Off-the-shelf microphones are widely available and can be deployed to steal users&#39; biometric traits (e.g. voiceprints) or private conversations. Thus, unauthorized voice recording has become a serious societal issue.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Limitation of Existing Jammer:&lt;/strong&gt; Existing jammers disrupt unauthorized voice recording by emiting an ultrasounic scrambling noise. However, there are two limitations of those applications/devices.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;It will &lt;strong&gt;affact&lt;/strong&gt; the normal usage of other voice users. For example, in the cover figure, when Bob deploys such jammer in public, all the microphones will be jammed, which means the surrounded people cannnot use their voice assistants, video call, and enmergency call meanwhile.&lt;/li&gt;
-&lt;li&gt;It&amp;rsquo;s &lt;strong&gt;not secure enough&lt;/strong&gt;. The jammed recording can be parsed if the attacker know the noise pattern. If the attacker learns the frequency pattern of the scrambling noise wave, the attacker can deploy an additional microphone to nullify the noises and record them illegally&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Speaker specified feature&lt;/strong&gt;: We found every speaker has a distinct speech feature that introduced by the variety of their vocal system. By adopting the speaker specified feature, we can extract Bob&amp;rsquo;s voice from a mixed audio input. Then we use a ultrasound speaker to play the rest sound (e.g., Alice&amp;rsquo;s voice) that not belong to Bob, and overshadow Bob&amp;rsquo;s voice in the wild while maintaining the other speakers&#39; voice on their end.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;demo&#34; srcset=&#34;
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_27d441b62bd99f6b05ccf1d5ad59f13b.JPG 400w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_f124db61864ebc361caff305f8256440.JPG 760w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_27d441b62bd99f6b05ccf1d5ad59f13b.JPG&#34;
-               width=&#34;603&#34;
-               height=&#34;346&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;methodology&#34;&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_ff684e1ceeec991546c5270752b587ef.JPG 400w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_e3e4ff91bc47c51a524610e7db1627c2.JPG 760w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_ff684e1ceeec991546c5270752b587ef.JPG&#34;
-               width=&#34;666&#34;
-               height=&#34;268&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;br&gt;
-The core of our model is the speaker &lt;strong&gt;Selector&lt;/strong&gt; that present in above figure. We use the &lt;strong&gt;Selector&lt;/strong&gt; to extract Bob&amp;rsquo;s voice in real-time. To train the &lt;strong&gt;Selector&lt;/strong&gt;, we construct many mixed audio from two speakers, and introduce the prior knowledge (&lt;strong&gt;Reference Audio&lt;/strong&gt;) of the one speaker in the &lt;strong&gt;mixed audio&lt;/strong&gt;. Through filtering out the known speaker from the mixed audio, the &lt;strong&gt;Selector&lt;/strong&gt; learns to extract speaker specified voice from the mixed sound. Then, the &lt;strong&gt;Selector&lt;/strong&gt; produces the filtered &lt;strong&gt;Bob&amp;rsquo;s irrelated&lt;/strong&gt; to mix the original sound, and hence hide &lt;strong&gt;Bob&amp;rsquo;s voice&lt;/strong&gt; on the recorder side.&lt;/p&gt;
-&lt;h3 id=&#34;demo&#34;&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/h3&gt;
-&lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Setup-1&lt;/th&gt;
-&lt;th style=&#34;text-align:center&#34;&gt;Setup-2&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_c7e15a61a883c5603ca9d6f540faf8eb.JPG 400w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_39524779f4b62b91a5761ab8b9f62aa1.JPG 760w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_c7e15a61a883c5603ca9d6f540faf8eb.JPG&#34;
-               width=&#34;483&#34;
-               height=&#34;347&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/td&gt;
-&lt;td style=&#34;text-align:center&#34;&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_1c526fbced878306993efd729fb86483.JPG 400w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_9c49360bdf827aacbaf02e4544fd1231.JPG 760w,
-               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_1c526fbced878306993efd729fb86483.JPG&#34;
-               width=&#34;443&#34;
-               height=&#34;376&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;There are two experimental settings of our work. &lt;strong&gt;Left&lt;/strong&gt; is the benchmark test running with public dataset and simulate the mixed speaker plays the mixed audio. &lt;strong&gt;Right&lt;/strong&gt; is the real world scenario that Bob holds our device to protect his voice without intervening Alice&amp;rsquo;s phone use.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Below are the voice demos of our system that recorded from &lt;strong&gt;Alice&amp;rsquo;s recorder&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
-&lt;div&gt;
-&lt;table&gt;
-&lt;tr&gt;
-	&lt;td&gt;Bob and Alice talk simultaneously&lt;/td&gt;
-	&lt;td&gt;Only Alice&#39;s voice is kept&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-	&lt;td&gt;&lt;audio controls&gt;
-		  &lt;source src=&#34;joint.wav&#34; type=&#34;audio/wav&#34;&gt;
-		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-		&lt;/audio&gt;&lt;/td&gt;
-	&lt;td&gt;&lt;audio controls&gt;
-		  &lt;source src=&#34;joint-focus.wav&#34; type=&#34;audio/wav&#34;&gt;
-		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-		&lt;/audio&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-	&lt;td&gt;&lt;audio controls&gt;
-		  &lt;source src=&#34;conversation.wav&#34; type=&#34;audio/wav&#34;&gt;
-		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-		&lt;/audio&gt;&lt;/td&gt;
-	&lt;td&gt;&lt;audio controls&gt;
-		  &lt;source src=&#34;conversation-hide.wav&#34; type=&#34;audio/wav&#34;&gt;
-		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
-		&lt;/audio&gt;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/table&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Ultrasound Enabled Speaker Authentication</title>
-      <link>https://example.com/talk/ultrasound-enabled-speaker-authentication/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
-      <guid>https://example.com/talk/ultrasound-enabled-speaker-authentication/</guid>
-      <description>&lt;h3 id=&#34;motivation&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;:&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Ultrasound in Speech&lt;/strong&gt;: We found that human can produce ultrasound by collecting human speech with a high-end ultrasonic microphone (&lt;a href=&#34;http://www.avisoft.com/ultrasound-microphones/cm16-cmpa/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CM-16&lt;/a&gt;). See the experimental setup below:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;setup&#34; srcset=&#34;
-               /talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_7651c9548bc1480dd37f1c5edab33133.JPG 400w,
-               /talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_8257df6de9f21ab2496f1da5da7bf73e.JPG 760w,
-               /talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_7651c9548bc1480dd37f1c5edab33133.JPG&#34;
-               width=&#34;634&#34;
-               height=&#34;385&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
- From the recorded human speech, we analyze the spectrogram and present it to the next figure.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;method&#34; srcset=&#34;
-               /talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_bed9d5ea7508815bc6c3e95dede844ff.JPG 400w,
-               /talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_750aafde5cd2e7168ccbb0118d2239a3.JPG 760w,
-               /talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_bed9d5ea7508815bc6c3e95dede844ff.JPG&#34;
-               width=&#34;611&#34;
-               height=&#34;255&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-It shows that when participants say &amp;ldquo;&lt;em&gt;She had your dark suit in greasy wash water all year&lt;/em&gt;&amp;rdquo;, there are some phonemes such as &lt;strong&gt;/sh/&lt;/strong&gt;, &lt;strong&gt;/s/&lt;/strong&gt;, &lt;strong&gt;/sy/&lt;/strong&gt;, &lt;strong&gt;/s/&lt;/strong&gt; reach extremely high frequencies (e.g., ~40kHz). The reason why human can produce some ultrasound is the different manners of articulation make different airstream flows. When two speech organs narrow the airstream to cause friction to occur as it passes through, Fricatives are produced. If the airstream is stopped and then released, Stop or Affricate is produced. We found that &lt;strong&gt;fricative&lt;/strong&gt;, &lt;strong&gt;stop&lt;/strong&gt;, and &lt;strong&gt;affricate&lt;/strong&gt; phonemes often carries more energy in ultrasound band.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Distinctiveness of Ultrasound&lt;/strong&gt;: We extract the speech energies at &lt;strong&gt;fricative&lt;/strong&gt;, &lt;strong&gt;stop&lt;/strong&gt;, and &lt;strong&gt;affricate&lt;/strong&gt; phonemes and summerize them together to represent the identity of the speakers by using $$S_{LTA}(f)=\frac{1}{M}\sum_{t=1}^{N} S(f, p)$$
-where &lt;code&gt;S(f,p)&lt;/code&gt; represents the spectrogram value at frequency &lt;code&gt;f&lt;/code&gt; and time frame &lt;code&gt;p&lt;/code&gt;. By comparing the $$S_{LTA}(f)$$ of different participants, we get the following results.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;distinct&#34; srcset=&#34;
-               /talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_6ffb822d6201c007fc37b1c953210485.JPG 400w,
-               /talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_661751df975620d3e904e2fca6bc33c4.JPG 760w,
-               /talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_6ffb822d6201c007fc37b1c953210485.JPG&#34;
-               width=&#34;625&#34;
-               height=&#34;256&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-From the left figure, we can see that participants have dispersed speech energies between frequency range from &lt;code&gt;20kHz-40kHz&lt;/code&gt;, for lower frequencies, we observed similar speech energy trends. The right figure shows the average variance of those speakers, it is evident to show that &lt;code&gt;16-24kHz&lt;/code&gt;, &lt;code&gt;24-32kHz&lt;/code&gt; and &lt;code&gt;32-40kHz&lt;/code&gt; contribute more differences to differentiate participants.&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Ultrasound Speech for Liveness Detection&lt;/strong&gt; Since we find that human can produce some ultrasound, we then use them to detect whether a sound is generated by human or a speaker.
-Through recording the human speech and the replay sound, we present the spectrogram differences as follow: 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;liveness&#34; srcset=&#34;
-               /talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_be60e3c4332c231512b2b7303546573b.JPG 400w,
-               /talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_810488cd5cd5a5035e208a06c692da23.JPG 760w,
-               /talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_be60e3c4332c231512b2b7303546573b.JPG&#34;
-               width=&#34;760&#34;
-               height=&#34;192&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Human: Human speech directly recorded by an ultrasound microphone.&lt;/li&gt;
-&lt;li&gt;Scenario1: Attackers record and replay with commercial devices (smart phones).&lt;/li&gt;
-&lt;li&gt;Scenario2: Attackers record with high-end microphones and replay with commercial speakers (smart phones).&lt;/li&gt;
-&lt;li&gt;Scenario3: Attackers record with high-end microphones and replay with ultrasound speakers.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;We can observe the apparent difference for four spectrograms. By exploiting this clear differences, we can design our liveness detection algorithm to reach high detection accuracy.&lt;/p&gt;
-&lt;h3 id=&#34;methodology&#34;&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;figure  &gt;
-  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
-    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;model&#34; srcset=&#34;
-               /talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_6930b4fec25a089811e7f4175612b67c.JPG 400w,
-               /talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_697bd31bbe608aa2a97f7ccc4095060a.JPG 760w,
-               /talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
-               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_6930b4fec25a089811e7f4175612b67c.JPG&#34;
-               width=&#34;760&#34;
-               height=&#34;221&#34;
-               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
-  &lt;/div&gt;&lt;/figure&gt;
-
-We design a end to end speaker authentication system, which includes a liveness detection module and a speaker verification module. By incorporating the ultrasound component in human speech, we design a &lt;em&gt;&lt;strong&gt;Cumulative energy analysis&lt;/strong&gt;&lt;/em&gt; method to detect replay attack. Furthermore, we introduce a &lt;em&gt;&lt;strong&gt;two-stream DNN&lt;/strong&gt;&lt;/em&gt; to handle the low frequency data and the high frequency speech, and fused the extracted feature together to verify the user&amp;rsquo;s voice.&lt;/p&gt;
-&lt;h3 id=&#34;demo&#34;&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/h3&gt;
-&lt;p&gt;For more descripitions and &lt;strong&gt;demos&lt;/strong&gt; of our collected high frequency human speech, please visit &lt;a href=&#34;https://supervoiceapp.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
-</description>
     </item>
     
     <item>
@@ -1044,6 +620,430 @@ draw each char &lt;br&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/example/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Black-Box, Query-Efficient Audio Adversarial Attacks</title>
+      <link>https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/</guid>
+      <description>&lt;h3 id=&#34;motivation&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Query-Inefficient&lt;/strong&gt;: Existing black box audio attacks require plenty of queries to interact with the victim speech models, e.g., &lt;a href=&#34;https://www.usenix.org/system/files/sec20summer_chen-yuxuan_prepub.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Devil&amp;rsquo;s whisper&lt;/a&gt; attacks commercial speech to text model by training an substitute model through querying victim model. &lt;a href=&#34;https://arxiv.org/pdf/2110.09714.pdf&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;OCCAM&lt;/a&gt; estimates the gradient by incorporating evolutionary algorithms. The extensive query is time consuming, costly and may attract attention.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Decision-Boundary&lt;/strong&gt;: We find that the decision boundary in speech to text model is different from it in computer vision models. Due to the non-contiguous decision boundary, it&amp;rsquo;s hard for attacker to initialize the perturbation.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Phoneme&lt;/strong&gt; We find a short phoneme can surprisingly alter the speech model prediction. Based on the observation, we decide to optimize the duration and power of phoneme to inject it attacking the speech to text model.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;methodology&#34;&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;method&#34; srcset=&#34;
+               /talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_09e22208c629ca2bc018ec837b2af644.JPG 400w,
+               /talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_c2c486aed395a6a05cadf6cffa5ca2b3.JPG 760w,
+               /talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/method_hu1fb2b889d904d6d5c2d2b18568b844bf_65740_09e22208c629ca2bc018ec837b2af644.JPG&#34;
+               width=&#34;760&#34;
+               height=&#34;250&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+ There are three stages to generate a perturbation. At stage 1, given an input audio, we inject many different phonemes to it and try to alter the transcript result. Next, we collect the phonemes or phoneme combinations to a perturbation set. At stage 3, we estimate the gradient by applying small changes to the candidate perturbation, and then estimate the gradient direction through observing the prediction result changes. Then apply the estimated gradient to fine tuning the perturbation. Finally, we can get the adversarial perturbation targeting to a input audio.&lt;/p&gt;
+&lt;!-- ### **Demo**
+&lt;div&gt;
+&lt;table&gt;
+&lt;tr&gt;
+	&lt;td&gt;Bob and Alice talk simultaneously&lt;/td&gt;
+	&lt;td&gt;Only Alice&#39;s voice is kept&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;audio controls&gt;
+		  &lt;source src=&#34;./assets/joint.wav&#34; type=&#34;audio/wav&#34;&gt;
+		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+		&lt;/audio&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;audio controls&gt;
+		  &lt;source src=&#34;./assets/joint-focus.wav&#34; type=&#34;audio/wav&#34;&gt;
+		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+		&lt;/audio&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt; --&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Speaker Selective Cancellation via Neural Enhanced Ultrasound Shadowing</title>
+      <link>https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/</guid>
+      <description>&lt;h3 id=&#34;motivation&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Necessity of Recorder Jammer:&lt;/strong&gt; Voice recording is an essential information-sharing approach, which is benefiting many aspects of our daily life. Nowadays, smartphones and Internet-of-Things (IoT) devices equipped with microphones allow people to record voice anytime and anywhere.
+However, the growing presence of unauthorized microphones has led to numerous incidences of privacy violations. Off-the-shelf microphones are widely available and can be deployed to steal users&#39; biometric traits (e.g. voiceprints) or private conversations. Thus, unauthorized voice recording has become a serious societal issue.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Limitation of Existing Jammer:&lt;/strong&gt; Existing jammers disrupt unauthorized voice recording by emiting an ultrasounic scrambling noise. However, there are two limitations of those applications/devices.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;It will &lt;strong&gt;affact&lt;/strong&gt; the normal usage of other voice users. For example, in the cover figure, when Bob deploys such jammer in public, all the microphones will be jammed, which means the surrounded people cannnot use their voice assistants, video call, and enmergency call meanwhile.&lt;/li&gt;
+&lt;li&gt;It&amp;rsquo;s &lt;strong&gt;not secure enough&lt;/strong&gt;. The jammed recording can be parsed if the attacker know the noise pattern. If the attacker learns the frequency pattern of the scrambling noise wave, the attacker can deploy an additional microphone to nullify the noises and record them illegally&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Speaker specified feature&lt;/strong&gt;: We found every speaker has a distinct speech feature that introduced by the variety of their vocal system. By adopting the speaker specified feature, we can extract Bob&amp;rsquo;s voice from a mixed audio input. Then we use a ultrasound speaker to play the rest sound (e.g., Alice&amp;rsquo;s voice) that not belong to Bob, and overshadow Bob&amp;rsquo;s voice in the wild while maintaining the other speakers&#39; voice on their end.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;demo&#34; srcset=&#34;
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_27d441b62bd99f6b05ccf1d5ad59f13b.JPG 400w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_f124db61864ebc361caff305f8256440.JPG 760w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/demo_hu1fb2b889d904d6d5c2d2b18568b844bf_39706_27d441b62bd99f6b05ccf1d5ad59f13b.JPG&#34;
+               width=&#34;603&#34;
+               height=&#34;346&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;methodology&#34;&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_ff684e1ceeec991546c5270752b587ef.JPG 400w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_e3e4ff91bc47c51a524610e7db1627c2.JPG 760w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/model1_hu1fb2b889d904d6d5c2d2b18568b844bf_50310_ff684e1ceeec991546c5270752b587ef.JPG&#34;
+               width=&#34;666&#34;
+               height=&#34;268&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;br&gt;
+The core of our model is the speaker &lt;strong&gt;Selector&lt;/strong&gt; that present in above figure. We use the &lt;strong&gt;Selector&lt;/strong&gt; to extract Bob&amp;rsquo;s voice in real-time. To train the &lt;strong&gt;Selector&lt;/strong&gt;, we construct many mixed audio from two speakers, and introduce the prior knowledge (&lt;strong&gt;Reference Audio&lt;/strong&gt;) of the one speaker in the &lt;strong&gt;mixed audio&lt;/strong&gt;. Through filtering out the known speaker from the mixed audio, the &lt;strong&gt;Selector&lt;/strong&gt; learns to extract speaker specified voice from the mixed sound. Then, the &lt;strong&gt;Selector&lt;/strong&gt; produces the filtered &lt;strong&gt;Bob&amp;rsquo;s irrelated&lt;/strong&gt; to mix the original sound, and hence hide &lt;strong&gt;Bob&amp;rsquo;s voice&lt;/strong&gt; on the recorder side.&lt;/p&gt;
+&lt;h3 id=&#34;demo&#34;&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/h3&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Setup-1&lt;/th&gt;
+&lt;th style=&#34;text-align:center&#34;&gt;Setup-2&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_c7e15a61a883c5603ca9d6f540faf8eb.JPG 400w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_39524779f4b62b91a5761ab8b9f62aa1.JPG 760w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup_hu1fb2b889d904d6d5c2d2b18568b844bf_51378_c7e15a61a883c5603ca9d6f540faf8eb.JPG&#34;
+               width=&#34;483&#34;
+               height=&#34;347&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/td&gt;
+&lt;td style=&#34;text-align:center&#34;&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;&#34; srcset=&#34;
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_1c526fbced878306993efd729fb86483.JPG 400w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_9c49360bdf827aacbaf02e4544fd1231.JPG 760w,
+               /talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/setup2_hu1fb2b889d904d6d5c2d2b18568b844bf_36073_1c526fbced878306993efd729fb86483.JPG&#34;
+               width=&#34;443&#34;
+               height=&#34;376&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;There are two experimental settings of our work. &lt;strong&gt;Left&lt;/strong&gt; is the benchmark test running with public dataset and simulate the mixed speaker plays the mixed audio. &lt;strong&gt;Right&lt;/strong&gt; is the real world scenario that Bob holds our device to protect his voice without intervening Alice&amp;rsquo;s phone use.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Below are the voice demos of our system that recorded from &lt;strong&gt;Alice&amp;rsquo;s recorder&lt;/strong&gt;.&lt;/em&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;table&gt;
+&lt;tr&gt;
+	&lt;td&gt;Bob and Alice talk simultaneously&lt;/td&gt;
+	&lt;td&gt;Only Alice&#39;s voice is kept&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;audio controls&gt;
+		  &lt;source src=&#34;joint.wav&#34; type=&#34;audio/wav&#34;&gt;
+		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+		&lt;/audio&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;audio controls&gt;
+		  &lt;source src=&#34;joint-focus.wav&#34; type=&#34;audio/wav&#34;&gt;
+		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+		&lt;/audio&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+	&lt;td&gt;&lt;audio controls&gt;
+		  &lt;source src=&#34;conversation.wav&#34; type=&#34;audio/wav&#34;&gt;
+		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+		&lt;/audio&gt;&lt;/td&gt;
+	&lt;td&gt;&lt;audio controls&gt;
+		  &lt;source src=&#34;conversation-hide.wav&#34; type=&#34;audio/wav&#34;&gt;
+		  Your browser does not support the &lt;code&gt;audio&lt;/code&gt; element.
+		&lt;/audio&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Ultrasound Enabled Speaker Authentication</title>
+      <link>https://example.com/talk/ultrasound-enabled-speaker-authentication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://example.com/talk/ultrasound-enabled-speaker-authentication/</guid>
+      <description>&lt;h3 id=&#34;motivation&#34;&gt;&lt;strong&gt;Motivation&lt;/strong&gt;:&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ultrasound in Speech&lt;/strong&gt;: We found that human can produce ultrasound by collecting human speech with a high-end ultrasonic microphone (&lt;a href=&#34;http://www.avisoft.com/ultrasound-microphones/cm16-cmpa/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;CM-16&lt;/a&gt;). See the experimental setup below:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;setup&#34; srcset=&#34;
+               /talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_7651c9548bc1480dd37f1c5edab33133.JPG 400w,
+               /talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_8257df6de9f21ab2496f1da5da7bf73e.JPG 760w,
+               /talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/testbed_hu1fb2b889d904d6d5c2d2b18568b844bf_60110_7651c9548bc1480dd37f1c5edab33133.JPG&#34;
+               width=&#34;634&#34;
+               height=&#34;385&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+ From the recorded human speech, we analyze the spectrogram and present it to the next figure.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;method&#34; srcset=&#34;
+               /talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_bed9d5ea7508815bc6c3e95dede844ff.JPG 400w,
+               /talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_750aafde5cd2e7168ccbb0118d2239a3.JPG 760w,
+               /talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/ultrasound_audio_hu1fb2b889d904d6d5c2d2b18568b844bf_44143_bed9d5ea7508815bc6c3e95dede844ff.JPG&#34;
+               width=&#34;611&#34;
+               height=&#34;255&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+It shows that when participants say &amp;ldquo;&lt;em&gt;She had your dark suit in greasy wash water all year&lt;/em&gt;&amp;rdquo;, there are some phonemes such as &lt;strong&gt;/sh/&lt;/strong&gt;, &lt;strong&gt;/s/&lt;/strong&gt;, &lt;strong&gt;/sy/&lt;/strong&gt;, &lt;strong&gt;/s/&lt;/strong&gt; reach extremely high frequencies (e.g., ~40kHz). The reason why human can produce some ultrasound is the different manners of articulation make different airstream flows. When two speech organs narrow the airstream to cause friction to occur as it passes through, Fricatives are produced. If the airstream is stopped and then released, Stop or Affricate is produced. We found that &lt;strong&gt;fricative&lt;/strong&gt;, &lt;strong&gt;stop&lt;/strong&gt;, and &lt;strong&gt;affricate&lt;/strong&gt; phonemes often carries more energy in ultrasound band.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Distinctiveness of Ultrasound&lt;/strong&gt;: We extract the speech energies at &lt;strong&gt;fricative&lt;/strong&gt;, &lt;strong&gt;stop&lt;/strong&gt;, and &lt;strong&gt;affricate&lt;/strong&gt; phonemes and summerize them together to represent the identity of the speakers by using $$S_{LTA}(f)=\frac{1}{M}\sum_{t=1}^{N} S(f, p)$$
+where &lt;code&gt;S(f,p)&lt;/code&gt; represents the spectrogram value at frequency &lt;code&gt;f&lt;/code&gt; and time frame &lt;code&gt;p&lt;/code&gt;. By comparing the $$S_{LTA}(f)$$ of different participants, we get the following results.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;distinct&#34; srcset=&#34;
+               /talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_6ffb822d6201c007fc37b1c953210485.JPG 400w,
+               /talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_661751df975620d3e904e2fca6bc33c4.JPG 760w,
+               /talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/distinctive_hu1fb2b889d904d6d5c2d2b18568b844bf_39703_6ffb822d6201c007fc37b1c953210485.JPG&#34;
+               width=&#34;625&#34;
+               height=&#34;256&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+From the left figure, we can see that participants have dispersed speech energies between frequency range from &lt;code&gt;20kHz-40kHz&lt;/code&gt;, for lower frequencies, we observed similar speech energy trends. The right figure shows the average variance of those speakers, it is evident to show that &lt;code&gt;16-24kHz&lt;/code&gt;, &lt;code&gt;24-32kHz&lt;/code&gt; and &lt;code&gt;32-40kHz&lt;/code&gt; contribute more differences to differentiate participants.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Ultrasound Speech for Liveness Detection&lt;/strong&gt; Since we find that human can produce some ultrasound, we then use them to detect whether a sound is generated by human or a speaker.
+Through recording the human speech and the replay sound, we present the spectrogram differences as follow: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;liveness&#34; srcset=&#34;
+               /talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_be60e3c4332c231512b2b7303546573b.JPG 400w,
+               /talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_810488cd5cd5a5035e208a06c692da23.JPG 760w,
+               /talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/liveness_hu1fb2b889d904d6d5c2d2b18568b844bf_79038_be60e3c4332c231512b2b7303546573b.JPG&#34;
+               width=&#34;760&#34;
+               height=&#34;192&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Human: Human speech directly recorded by an ultrasound microphone.&lt;/li&gt;
+&lt;li&gt;Scenario1: Attackers record and replay with commercial devices (smart phones).&lt;/li&gt;
+&lt;li&gt;Scenario2: Attackers record with high-end microphones and replay with commercial speakers (smart phones).&lt;/li&gt;
+&lt;li&gt;Scenario3: Attackers record with high-end microphones and replay with ultrasound speakers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We can observe the apparent difference for four spectrograms. By exploiting this clear differences, we can design our liveness detection algorithm to reach high detection accuracy.&lt;/p&gt;
+&lt;h3 id=&#34;methodology&#34;&gt;&lt;strong&gt;Methodology&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;figure  &gt;
+  &lt;div class=&#34;d-flex justify-content-center&#34;&gt;
+    &lt;div class=&#34;w-100&#34; &gt;&lt;img alt=&#34;model&#34; srcset=&#34;
+               /talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_6930b4fec25a089811e7f4175612b67c.JPG 400w,
+               /talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_697bd31bbe608aa2a97f7ccc4095060a.JPG 760w,
+               /talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_1200x1200_fit_q75_lanczos.JPG 1200w&#34;
+               src=&#34;https://example.com/talk/ultrasound-enabled-speaker-authentication/model_hu1fb2b889d904d6d5c2d2b18568b844bf_76798_6930b4fec25a089811e7f4175612b67c.JPG&#34;
+               width=&#34;760&#34;
+               height=&#34;221&#34;
+               loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
+  &lt;/div&gt;&lt;/figure&gt;
+
+We design a end to end speaker authentication system, which includes a liveness detection module and a speaker verification module. By incorporating the ultrasound component in human speech, we design a &lt;em&gt;&lt;strong&gt;Cumulative energy analysis&lt;/strong&gt;&lt;/em&gt; method to detect replay attack. Furthermore, we introduce a &lt;em&gt;&lt;strong&gt;two-stream DNN&lt;/strong&gt;&lt;/em&gt; to handle the low frequency data and the high frequency speech, and fused the extracted feature together to verify the user&amp;rsquo;s voice.&lt;/p&gt;
+&lt;h3 id=&#34;demo&#34;&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;For more descripitions and &lt;strong&gt;demos&lt;/strong&gt; of our collected high frequency human speech, please visit &lt;a href=&#34;https://supervoiceapp.github.io&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;strong&gt;Here&lt;/strong&gt;&lt;/a&gt;.&lt;/p&gt;
+</description>
     </item>
     
   </channel>

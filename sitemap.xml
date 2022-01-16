@@ -8,8 +8,6 @@
   <url>
     <loc>https://example.com/publication-type/1/</loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
-  <url>
     <loc></loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
   <url>
     <loc></loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
@@ -32,15 +30,9 @@
   <url>
     <loc></loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/event/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
-  <url>
     <loc>https://example.com/publication/ivanov-2021-rectifying/</loc><lastmod>2022-01-01T21:03:40-05:00</lastmod></url>
   <url>
     <loc></loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
-  <url>
-    <loc>https://example.com/talk/ultrasound-enabled-speaker-authentication/</loc><lastmod>2021-01-01T00:00:00+00:00</lastmod></url>
   <url>
     <loc></loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
   <url>
@@ -154,4 +146,12 @@
   <url>
     <loc>https://example.com/admin/</loc></url>
   <url>
-    <loc>https://example.com/publication/example/</loc></url></urlset>
+    <loc>https://example.com/publication/example/</loc></url>
+  <url>
+    <loc>https://example.com/talk/black-box-query-efficient-audio-adversarial-attacks/</loc></url>
+  <url>
+    <loc>https://example.com/event/</loc></url>
+  <url>
+    <loc>https://example.com/talk/speaker-selective-cancellation-via-neural-enhanced-ultrasound-shadowing/</loc></url>
+  <url>
+    <loc>https://example.com/talk/ultrasound-enabled-speaker-authentication/</loc></url></urlset>
