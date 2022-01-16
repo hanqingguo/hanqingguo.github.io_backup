@@ -7,7 +7,7 @@
     <description>Recent &amp; Upcoming Talks</description>
     <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>https://example.com/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>https://example.com/event/</link>
     </image>
@@ -58,7 +58,7 @@
                loading=&#34;lazy&#34; data-zoomable /&gt;&lt;/div&gt;
   &lt;/div&gt;&lt;/figure&gt;
  There are three stages to generate a perturbation. At stage 1, given an input audio, we inject many different phonemes to it and try to alter the transcript result. Next, we collect the phonemes or phoneme combinations to a perturbation set. At stage 3, we estimate the gradient by applying small changes to the candidate perturbation, and then estimate the gradient direction through observing the prediction result changes. Then apply the estimated gradient to fine tuning the perturbation. Finally, we can get the adversarial perturbation targeting to a input audio.&lt;/p&gt;
-&lt;h3 id=&#34;demo&#34;&gt;&lt;strong&gt;Demo&lt;/strong&gt;&lt;/h3&gt;
+&lt;!-- ### **Demo**
 &lt;div&gt;
 &lt;table&gt;
 &lt;tr&gt;
@@ -76,7 +76,7 @@
 		&lt;/audio&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
-&lt;/div&gt;
+&lt;/div&gt; --&gt;
 </description>
     </item>
     
