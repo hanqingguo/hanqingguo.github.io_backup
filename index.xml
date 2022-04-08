@@ -453,76 +453,67 @@ $$&lt;/p&gt;
       <link>https://example.com/project/deepfake/</link>
       <pubDate>Thu, 27 Dec 2018 00:00:00 +0000</pubDate>
       <guid>https://example.com/project/deepfake/</guid>
-      <description>&lt;h2&gt;source code&lt;/h2&gt;
-This link behind shows how to implement &lt;a href=&#34;https://blog.paperspace.com/how-to-implement-a-yolo-object-detector-in-pytorch/&#34;&gt;YOLOv3 with pytorch instructions&lt;/a&gt;
-In my tutorial, I give a solution to convert Label to Chinese Character.
-&lt;h2&gt;4 Steps To Convert Label to Chinese&lt;/h2&gt;
-&lt;h3&gt;1. Change coconame&lt;/h3&gt;
-&lt;p&gt; First of all, we need to translate english label to chinese label
-&lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch/blob/master/data/coco.names&#34;&gt;translated labels is availiable here&lt;/a&gt;&lt;/p&gt;
-&lt;br&gt;
-&lt;h3&gt;2. Use FreeType to write a script to draw chinese characters&lt;/h3&gt;
-&lt;br&gt;
-&lt;p&gt; Because Opencv doesn&#39;t support chinese character, we need to use a known font style to draw chinese character, it contains 3 parts:
-  &lt;ol&gt;
-&lt;li&gt;&lt;code&gt;draw_ft_bitmap(self, img, bitmap, pen, color)&lt;/code&gt;&lt;br&gt;
-draw each char &lt;br&gt;
+      <description>&lt;h2&gt;What is Deepfakes&lt;/h2&gt;
+Basically, Deepfakes is an unsupervised machine learning algorithm.&lt;br&gt;
+It trains &lt;code&gt;one encoder&lt;/code&gt; and &lt;code&gt;two decoders&lt;/code&gt; to process &lt;code&gt;person A&lt;/code&gt; and &lt;code&gt;person B&lt;/code&gt;, the loss can be calculated by difference between ground truth image and decoded image.&lt;br&gt;
+For example, it trains an &lt;code&gt;encoder(e)&lt;/code&gt; to extract person A features, and trains a &lt;code&gt;decoder(dA)&lt;/code&gt; to decode A&#39;s feature and produce fake A&#39;s &lt;code&gt;image(fA)&lt;/code&gt;. Through comparing difference between &lt;code&gt;original image&lt;/code&gt; and &lt;code&gt;fA&lt;/code&gt;, to make encoder and decoder work well. &lt;br&gt;
+Similarly, the same &lt;code&gt;encoder(e)&lt;/code&gt; also extracts B&#39;s feature,
+and trains a &lt;code&gt;decoder(dB)&lt;/code&gt; to decode B&#39;s feature and produce fake B&#39;s &lt;code&gt;image(fB)&lt;/code&gt;.&lt;br&gt;
+&lt;p&gt;&lt;font color=&#34;blue&#34;&gt;
+Think about it, what if given a image of A, and use &lt;code&gt;(dB)&lt;/code&gt; to decode, what will happens?&lt;/font&gt;&lt;/p&gt;&lt;br&gt;
+&lt;p&gt;&lt;font size=&#34;+2&#34;&gt;
+Here is the magic:&lt;/font&gt;&lt;/p&gt;
+&lt;img src=&#34;face.jpg&#34; width=&#34;85%&#34;/&gt;
+&lt;h2&gt;Basic Concept&lt;/h2&gt;
+This basic concept of deepfake can also be found here: &lt;a href=&#34;https://www.alanzucconi.com/2018/03/14/understanding-the-technology-behind-deepfakes/&#34;&gt;understanding Deepfakes &lt;/a&gt;
+or chinese version &lt;a href=&#34;https://oldpan.me/archives/deepfake-autoencoder-face-swap&#34;&gt; Good Tutorial of Chinese version Deepfakes&lt;/a&gt;
+In my tutorial, I give a solution to use pytorch implement deepfakes and change trump&#39;s presentation video with my face!
+&lt;h2&gt;5 Steps To Use My code&lt;/h2&gt;
+find my code at &lt;a href=&#34;https://github.com/hanqingguo/deepfake-pytorch&#34;&gt;My Code&lt;/a&gt; and git clone to an empty repo.
+&lt;h3&gt;Requirement:&lt;/h3&gt;
 &lt;pre&gt;
-    :param bitmap: bitmap
-    :param pen:    pen
-    :param color:  pen color e.g.(0,0,255) - red
-    :return:       image
+python == 3.6
+pytorch &amp;gt= 0.4.0 or 1.0
+dlib
 &lt;/pre&gt;
- &lt;/li&gt;
-&lt;li&gt;&lt;code&gt;draw_string(self, img, x_pos, y_pos, text, color)&lt;/code&gt;&lt;br&gt;
-  draw string &lt;br&gt;
+&lt;h3&gt;1. Construct Dataset&lt;/h3&gt;
+&lt;p&gt; First of all, we need to constrcut our dataset.&lt;br&gt;&lt;/p&gt;
 &lt;pre&gt;
-    :param x_pos: text x-postion on img
-    :param y_pos: text y-postion on img
-    :param text:  text (unicode)
-    :param color: text color
-    :return:      image
+$ cd #current directory#
+$ mkdir train
+$ cd train
 &lt;/pre&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;draw_text(self, image, pos, text, text_size, text_color)&lt;/code&gt;&lt;br&gt;
-  (draw chinese(or not) text with ttf &lt;br&gt;
+&lt;p&gt;Put videos of A and B to train/ , for example, trump.mp4 and me.mp4 where A is trump, B is myself &lt;/p&gt;
+&lt;h3&gt;2. Crop frames from videos&lt;/h3&gt;
+In train/ directory, make two subdirectory to store all frames of videos
 &lt;pre&gt;
-    :param image:     image(numpy.ndarray) to draw text
-    :param pos:       where to draw text
-    :param text:      the context, for chinese should be unicode type
-    :param text_size: text size
-    :param text_color:text color
-    :return:          image
+$ mkdir personA
+$ mkdir personB
 &lt;/pre&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
+Run &lt;pre&gt;python crop_from_video.py&lt;/pre&gt; to save frames to &lt;code&gt;personA&lt;/code&gt; and &lt;code&gt;personB&lt;/code&gt; directory. &lt;br&gt;
+&lt;p&gt;Make sure change &lt;code&gt;Video_Path&lt;/code&gt; and &lt;code&gt;save_path&lt;/code&gt; parameter in the python file. Do it twice to crop trump video to &lt;code&gt;personA&lt;/code&gt; directory, crop my video to &lt;code&gt;personB&lt;/code&gt; directory.&lt;/p&gt;
+&lt;h3&gt;3. Collect faces from frames&lt;/h3&gt;
+In train/ directory, make two subdirectory to store faces of all frames.
+&lt;pre&gt;
+$ mkdir personA_face
+&lt;/pre&gt;
+#(To save faces of person A from personA)
+&lt;pre&gt;
+$ mkdir personB_face
+&lt;/pre&gt;
+ #(To save faces of person A from personA)&lt;br&gt;
+&lt;p&gt;Run &lt;pre&gt;python crop_face.py&lt;/pre&gt; use &lt;code&gt;dlib&lt;/code&gt; to crop faces from frames and save to &lt;code&gt;personA_face&lt;/code&gt; and &lt;code&gt;personB_face&lt;/code&gt;&lt;br&gt;&lt;/p&gt;
+&lt;p&gt;## Make sure change Image_Folder and OutFace_Folder parameter in the python file. Do it twice to crop trump face to &lt;code&gt;personA_face&lt;/code&gt; directory, crop myselft face to personB_face directory.
 &lt;/p&gt;
-&lt;h3&gt;3. Download msyh.ttf&lt;/h3&gt;
-&lt;p&gt; .ttf file is dependency to specify font style, it would be loaded in FreeType script, click &lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch/blob/master/msyh.ttf&#34;&gt;here&lt;/a&gt; to Download &lt;/p&gt;
-&lt;h3&gt;4. Apply ft2 Chinese Character to yolo&lt;/h3&gt;
-&lt;p&gt;In main detect flow (cam_detect.py), instead of using &lt;code&gt;cv2.imshow()&lt;/code&gt;, we use &lt;code&gt;ft.draw_text()&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;
-   comment &lt;code&gt;cv2.putText&lt;/code&gt; part, use &lt;code&gt;ft.draw_text&lt;/code&gt; instead &lt;br&gt;
-&lt;pre&gt;
-    # c2 = c1[0] + t_size[0] + 3, c1[1] + t_size[1] + 4
-    # cv2.rectangle(img, c1, c2,color, -1)
-    # cv2.rectangle(img, c1, c2, color, -1)
-    # cv2.putText(img, label, (c1[0], c1[1] + t_size[1] + 4), cv2.FONT_HERSHEY_PLAIN, 2, [225,255,255], 1);
-    ft = ft2.put_chinese_text(&#39;msyh.ttf&#39;)
-    ft.draw_text(image=img, pos=(c1[0], c1[1] + t_size[1] - 7), text=label, text_size=15, text_color=[255, 255, 255])
-&lt;/pre&gt;&lt;/p&gt;
-&lt;h3&gt;Before Translate&lt;/h3&gt;
+&lt;h3&gt;4. Train Model&lt;/h3&gt;
+&lt;pre&gt;python train.py&lt;/pre&gt;
+&lt;h3&gt;5. Load Model and Output video with my face and trump body&lt;/h3&gt;
+&lt;pre&gt;python convert_video.py&lt;/pre&gt;
+&lt;h3&gt;Interesting!&lt;/h3&gt;
 &lt;video width=&#34;400&#34; controls&gt;
-&lt;source src=&#34;https://example.com/assets/media/yolo/eng_caption.mp4&#34; type=&#34;video/mp4&#34;&gt;
+&lt;source src=&#34;me4_out.mp4&#34; type=&#34;video/mp4&#34;&gt;
 &lt;/video&gt;
 &lt;br/&gt;
-&lt;h3&gt;After Translate&lt;/h3&gt;
-&lt;video width=&#34;400&#34; controls&gt;
-&lt;source src=&#34;https://example.com/assets/media/yolo/cn_caption.mp4&#34; type=&#34;video/mp4&#34;&gt;
-&lt;/video&gt;
-&lt;/br&gt;
-&lt;p&gt;You can Download All source code from my github,&lt;a href=&#34;https://github.com/hanqingguo/YoloV3Pytorch&#34;&gt;here&lt;/a&gt;
-&lt;/p&gt;
 </description>
     </item>
     
