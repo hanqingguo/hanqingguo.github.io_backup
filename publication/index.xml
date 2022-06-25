@@ -5,7 +5,7 @@
     <link>https://example.com/publication/</link>
       <atom:link href="https://example.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 01 Jan 2021 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 21:03:42 -0500</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
@@ -15,7 +15,7 @@
     <item>
       <title>NELoRa: Towards Ultra-low SNR LoRa Communication with Neural-enhanced Demodulation</title>
       <link>https://example.com/publication/li-2021-nelora/</link>
-      <pubDate>Fri, 01 Jan 2021 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 01 Jan 2022 21:03:42 -0500</pubDate>
       <guid>https://example.com/publication/li-2021-nelora/</guid>
       <description></description>
     </item>
