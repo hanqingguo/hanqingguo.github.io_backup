@@ -5,12 +5,36 @@
     <link>https://example.com/</link>
       <atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
     <description>Homepage</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 21:03:42 -0500</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jun 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
       <title>Homepage</title>
       <link>https://example.com/</link>
     </image>
+    
+    <item>
+      <title>NEC: Speaker Selective Cancellation via Neural Enhanced Ultrasound Shadowing</title>
+      <link>https://example.com/publication/guo-2022-nec/</link>
+      <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2022-nec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SuperVoice: Text-Independent Speaker Verification Using Ultrasound Energy in Human Speech</title>
+      <link>https://example.com/publication/guo-2022-supervoice/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2022-supervoice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>GhostTalk: Interactive Attack on Smartphone Voice System Through Power Line</title>
+      <link>https://example.com/publication/wang-2022-ghost/</link>
+      <pubDate>Sat, 05 Feb 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wang-2022-ghost/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>NELoRa: Towards Ultra-low SNR LoRa Communication with Neural-enhanced Demodulation</title>
@@ -602,14 +626,6 @@ $ mkdir personB_face
       <link>https://example.com/admin/config.yml</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://example.com/admin/config.yml</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/publication/example/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://example.com/publication/example/</guid>
       <description></description>
     </item>
     

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ning Zhang | Homepage</title>
+    <link>https://example.com/authors/ning-zhang/</link>
+      <atom:link href="https://example.com/authors/ning-zhang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Ning Zhang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
+      <title>Ning Zhang</title>
+      <link>https://example.com/authors/ning-zhang/</link>
+    </image>
+    
+    <item>
+      <title>Surfingattack: Interactive hidden attack on voice assistants using ultrasonic guided waves</title>
+      <link>https://example.com/publication/yan-2020-surfingattack/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/yan-2020-surfingattack/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

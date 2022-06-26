@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>L Xiao | Homepage</title>
+    <link>https://example.com/authors/l-xiao/</link>
+      <atom:link href="https://example.com/authors/l-xiao/index.xml" rel="self" type="application/rss+xml" />
+    <description>L Xiao</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
+      <title>L Xiao</title>
+      <link>https://example.com/authors/l-xiao/</link>
+    </image>
+    
+    <item>
+      <title>NEC: Speaker Selective Cancellation via Neural Enhanced Ultrasound Shadowing</title>
+      <link>https://example.com/publication/guo-2022-nec/</link>
+      <pubDate>Sat, 25 Jun 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2022-nec/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SuperVoice: Text-Independent Speaker Verification Using Ultrasound Energy in Human Speech</title>
+      <link>https://example.com/publication/guo-2022-supervoice/</link>
+      <pubDate>Mon, 30 May 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2022-supervoice/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NELoRa: Towards Ultra-low SNR LoRa Communication with Neural-enhanced Demodulation</title>
+      <link>https://example.com/publication/li-2021-nelora/</link>
+      <pubDate>Sat, 01 Jan 2022 21:03:42 -0500</pubDate>
+      <guid>https://example.com/publication/li-2021-nelora/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

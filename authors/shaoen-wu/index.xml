@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Shaoen Wu | Homepage</title>
+    <link>https://example.com/authors/shaoen-wu/</link>
+      <atom:link href="https://example.com/authors/shaoen-wu/index.xml" rel="self" type="application/rss+xml" />
+    <description>Shaoen Wu</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
+      <title>Shaoen Wu</title>
+      <link>https://example.com/authors/shaoen-wu/</link>
+    </image>
+    
+    <item>
+      <title>Deep Learning Driven Wireless Real-time Human Activity Recognition</title>
+      <link>https://example.com/publication/guo-2020-deep/</link>
+      <pubDate>Wed, 01 Jan 2020 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2020-deep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Automated labeling for robotic autonomous navigation through multi-sensory semi-supervised learning on big data</title>
+      <link>https://example.com/publication/xu-2019-automated/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xu-2019-automated/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DSIC: Deep learning based self-interference cancellation for in-band full duplex wireless</title>
+      <link>https://example.com/publication/guo-2019-dsic/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2019-dsic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>In-band full duplex wireless communications and networking for iot devices: Progress, challenges and opportunities</title>
+      <link>https://example.com/publication/wu-2019-band/</link>
+      <pubDate>Tue, 01 Jan 2019 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wu-2019-band/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>A deep residual convolutional neural network for facial keypoint detection with missing labels</title>
+      <link>https://example.com/publication/wu-2018-deep/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wu-2018-deep/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Distance based user localization and tracking with mechanical ultrasonic beamforming</title>
+      <link>https://example.com/publication/zhu-2018-distance/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/zhu-2018-distance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indoor human activity recognition based on ambient radar with signal processing and machine learning</title>
+      <link>https://example.com/publication/zhu-2018-indoor/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/zhu-2018-indoor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Indoor multi-sensory self-supervised autonomous mobile robotic navigation</title>
+      <link>https://example.com/publication/xu-2018-indoor/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xu-2018-indoor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Non-contact non-invasive heart and respiration rates monitoring with MIMO radar sensing</title>
+      <link>https://example.com/publication/liu-2018-non/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/liu-2018-non/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real Time 3D Indoor Human Image Capturing Based on FMCW Radar</title>
+      <link>https://example.com/publication/guo-2018-real/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2018-real/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Realtime software defined self-interference cancellation based on machine learning for in-band full duplex wireless communications</title>
+      <link>https://example.com/publication/guo-2018-realtime/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2018-realtime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Removing Background with Semantic Segmentation Based on Ensemble Learning</title>
+      <link>https://example.com/publication/xu-2018-removing/</link>
+      <pubDate>Mon, 01 Jan 2018 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xu-2018-removing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Avoidance of manual labeling in robotic autonomous navigation through multi-sensory semi-supervised learning</title>
+      <link>https://example.com/publication/xu-2017-avoidance/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xu-2017-avoidance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Real Time Video Stitching by Exploring Temporal and Spatial Features</title>
+      <link>https://example.com/publication/wu-2017-real/</link>
+      <pubDate>Sun, 01 Jan 2017 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wu-2017-real/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

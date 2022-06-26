@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>M Zhang | Homepage</title>
+    <link>https://example.com/authors/m-zhang/</link>
+      <atom:link href="https://example.com/authors/m-zhang/index.xml" rel="self" type="application/rss+xml" />
+    <description>M Zhang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jan 2022 21:03:42 -0500</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
+      <title>M Zhang</title>
+      <link>https://example.com/authors/m-zhang/</link>
+    </image>
+    
+    <item>
+      <title>NELoRa: Towards Ultra-low SNR LoRa Communication with Neural-enhanced Demodulation</title>
+      <link>https://example.com/publication/li-2021-nelora/</link>
+      <pubDate>Sat, 01 Jan 2022 21:03:42 -0500</pubDate>
+      <guid>https://example.com/publication/li-2021-nelora/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
