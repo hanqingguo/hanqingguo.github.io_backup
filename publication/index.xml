@@ -5,12 +5,20 @@
     <link>https://example.com/publication/</link>
       <atom:link href="https://example.com/publication/index.xml" rel="self" type="application/rss+xml" />
     <description>Publications</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 25 Jun 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
       <title>Publications</title>
       <link>https://example.com/publication/</link>
     </image>
+    
+    <item>
+      <title>SpecPatch: Human-In-The-Loop Adversarial Audio Spectrogram Patch Attack on Speech Recognition</title>
+      <link>https://example.com/publication/guo-2022-specpatch/</link>
+      <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2022-specpatch/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>NEC: Speaker Selective Cancellation via Neural Enhanced Ultrasound Shadowing</title>

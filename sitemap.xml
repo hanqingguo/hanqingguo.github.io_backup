@@ -4,35 +4,39 @@
   
   
   <url>
-    <loc>https://example.com/publication-type/1/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
+    <loc>https://example.com/publication-type/1/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/authors/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
+    <loc>https://example.com/authors/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/admin/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/l-xiao/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/n-ivanov/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication_types/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/q-yan/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/guo-2022-specpatch/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/y-wang/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/chenning-li/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/admin/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/l-xiao/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/lingkun-li/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/publication/guo-2022-nec/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/publication_types/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/publication/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/qiben-yan/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/zhichao-cao/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/e-hunter/</loc><lastmod>2022-05-30T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/n-ivanov/</loc><lastmod>2022-05-30T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/q-yan/</loc><lastmod>2022-05-30T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/publication/guo-2022-supervoice/</loc><lastmod>2022-05-30T21:03:40-05:00</lastmod></url>
   <url>
