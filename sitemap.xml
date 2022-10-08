@@ -8,9 +8,9 @@
   <url>
     <loc>https://example.com/authors/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/authors/admin/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
-  <url>
     <loc>https://example.com/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/admin/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/l-xiao/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
