@@ -5,12 +5,20 @@
     <link>https://example.com/authors/admin/</link>
       <atom:link href="https://example.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Hanqing Guo</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Thu, 25 Aug 2022 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 17 Oct 2022 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/authors/admin/avatar_hu18af2a482ff0a7e28f803b46f58c1c0e_141138_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Hanqing Guo</title>
       <link>https://example.com/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>U-Star: An Underwater Navigation System based on Passive 3D Optical Identification Tags</title>
+      <link>https://example.com/publication/xiao-2022-ustar/</link>
+      <pubDate>Mon, 17 Oct 2022 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/xiao-2022-ustar/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SpecPatch: Human-In-The-Loop Adversarial Audio Spectrogram Patch Attack on Speech Recognition</title>
