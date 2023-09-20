@@ -4,45 +4,61 @@
   
   
   <url>
-    <loc>https://example.com/publication-type/1/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
+    <loc>https://example.com/publication-type/1/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/authors/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
+    <loc>https://example.com/authors/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/admin/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/junfeng-guo/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/li-xiao/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/guo-2023-masterkey/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication_types/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/qiben-yan/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/xun-chen/</loc><lastmod>2023-07-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/bocheng-chen/</loc><lastmod>2023-07-23T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/guangjing-wang/</loc><lastmod>2023-07-23T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/guo-2023-phantom/</loc><lastmod>2023-07-23T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/authors/yuanda-wang/</loc><lastmod>2023-07-23T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/cbc-2023-multiturn/</loc><lastmod>2023-07-22T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/wang-2023-voicemask/</loc><lastmod>2023-05-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/cong-liu/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/admin/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/junfeng-guo/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
-  <url>
     <loc>https://example.com/authors/lichao-sun/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/publication_types/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/publication/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
-  <url>
     <loc>https://example.com/publication/junfeng-2023-scaleup/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/xun-chen/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/yiming-li/</loc><lastmod>2023-01-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/james-mariani/</loc><lastmod>2022-10-17T21:03:40-05:00</lastmod></url>
   <url>
-    <loc>https://example.com/authors/li-xiao/</loc><lastmod>2022-10-17T21:03:40-05:00</lastmod></url>
-  <url>
     <loc>https://example.com/publication/xiao-2022-ustar/</loc><lastmod>2022-10-17T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/xiao-zhang/</loc><lastmod>2022-10-17T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/publication/guo-2022-specpatch/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/l-xiao/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/n-ivanov/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/q-yan/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
+  <url>
+    <loc>https://example.com/publication/guo-2022-specpatch/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/y-wang/</loc><lastmod>2022-08-25T21:03:40-05:00</lastmod></url>
   <url>
@@ -51,8 +67,6 @@
     <loc>https://example.com/authors/lingkun-li/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/publication/guo-2022-nec/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/qiben-yan/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/zhichao-cao/</loc><lastmod>2022-06-25T21:03:40-05:00</lastmod></url>
   <url>
@@ -63,8 +77,6 @@
     <loc>https://example.com/authors/y-zhu/</loc><lastmod>2022-05-30T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/publication/wang-2022-ghost/</loc><lastmod>2022-02-05T21:03:40-05:00</lastmod></url>
-  <url>
-    <loc>https://example.com/authors/yuanda-wang/</loc><lastmod>2022-02-05T21:03:40-05:00</lastmod></url>
   <url>
     <loc>https://example.com/authors/c-li/</loc><lastmod>2022-01-01T21:03:42-05:00</lastmod></url>
   <url>

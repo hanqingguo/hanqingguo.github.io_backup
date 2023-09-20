@@ -5,12 +5,44 @@
     <link>https://example.com/authors/admin/</link>
       <atom:link href="https://example.com/authors/admin/index.xml" rel="self" type="application/rss+xml" />
     <description>Hanqing Guo</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/authors/admin/avatar_hu18af2a482ff0a7e28f803b46f58c1c0e_141138_270x270_fill_q75_lanczos_center.jpg</url>
       <title>Hanqing Guo</title>
       <link>https://example.com/authors/admin/</link>
     </image>
+    
+    <item>
+      <title>MASTERKEY: Practical Backdoor Attack Against Speaker Verification Systems</title>
+      <link>https://example.com/publication/guo-2023-masterkey/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2023-masterkey/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>PhantomSound: Black-Box, Query-Efficient Audio Adversarial Attack via Split-Second Phoneme Injection</title>
+      <link>https://example.com/publication/guo-2023-phantom/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2023-phantom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots</title>
+      <link>https://example.com/publication/cbc-2023-multiturn/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/cbc-2023-multiturn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSMask: Defending Against Voice Synthesis Attack via Real-Time Predictive Perturbation</title>
+      <link>https://example.com/publication/wang-2023-voicemask/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wang-2023-voicemask/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SCALE-UP: An Efficient Black-box Input-level Backdoor Detection via Analyzing Scaled Prediction Consistency</title>
@@ -29,7 +61,7 @@
     </item>
     
     <item>
-      <title>&lt;b&gt;CCS 2022&lt;/b&gt; SpecPatch: Human-In-The-Loop Adversarial Audio Spectrogram Patch Attack on Speech Recognition</title>
+      <title>SpecPatch: Human-In-The-Loop Adversarial Audio Spectrogram Patch Attack on Speech Recognition</title>
       <link>https://example.com/publication/guo-2022-specpatch/</link>
       <pubDate>Thu, 25 Aug 2022 00:00:00 +0000</pubDate>
       <guid>https://example.com/publication/guo-2022-specpatch/</guid>

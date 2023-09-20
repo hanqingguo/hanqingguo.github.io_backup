@@ -5,12 +5,20 @@
     <link>https://example.com/authors/xun-chen/</link>
       <atom:link href="https://example.com/authors/xun-chen/index.xml" rel="self" type="application/rss+xml" />
     <description>Xun Chen</description>
-    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 25 Jan 2023 00:00:00 +0000</lastBuildDate>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Tue, 25 Jul 2023 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
       <title>Xun Chen</title>
       <link>https://example.com/authors/xun-chen/</link>
     </image>
+    
+    <item>
+      <title>MASTERKEY: Practical Backdoor Attack Against Speaker Verification Systems</title>
+      <link>https://example.com/publication/guo-2023-masterkey/</link>
+      <pubDate>Tue, 25 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2023-masterkey/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SCALE-UP: An Efficient Black-box Input-level Backdoor Detection via Analyzing Scaled Prediction Consistency</title>

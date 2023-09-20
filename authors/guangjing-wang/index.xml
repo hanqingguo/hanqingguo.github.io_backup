@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guangjing Wang | Hanqing</title>
+    <link>https://example.com/authors/guangjing-wang/</link>
+      <atom:link href="https://example.com/authors/guangjing-wang/index.xml" rel="self" type="application/rss+xml" />
+    <description>Guangjing Wang</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sun, 23 Jul 2023 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://example.com/media/icon_huf89e5308245d1285fedf398a415e3606_64611_512x512_fill_lanczos_center_3.png</url>
+      <title>Guangjing Wang</title>
+      <link>https://example.com/authors/guangjing-wang/</link>
+    </image>
+    
+    <item>
+      <title>PhantomSound: Black-Box, Query-Efficient Audio Adversarial Attack via Split-Second Phoneme Injection</title>
+      <link>https://example.com/publication/guo-2023-phantom/</link>
+      <pubDate>Sun, 23 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/guo-2023-phantom/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Understanding Multi-Turn Toxic Behaviors in Open-Domain Chatbots</title>
+      <link>https://example.com/publication/cbc-2023-multiturn/</link>
+      <pubDate>Sat, 22 Jul 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/cbc-2023-multiturn/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VSMask: Defending Against Voice Synthesis Attack via Real-Time Predictive Perturbation</title>
+      <link>https://example.com/publication/wang-2023-voicemask/</link>
+      <pubDate>Thu, 25 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://example.com/publication/wang-2023-voicemask/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
